@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Churrasco de Vitor & Vitória</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fundo animado de fagulhas -->
+    <div class="embers-bg" id="embers"></div>
+
+    <!-- Tela Inicial de Entrada -->
+    <div id="welcome-screen">
+        <div class="welcome-card">
+            <div class="icon-badge">🔥</div>
+            <span class="tag-special">CONVITE ESPECIAL</span>
+            <h1>CHURRASCO</span></h1>
+            <div class="welcome-names">VITOR & VITÓRIA</div>
+            <div class="date-badge-box">19 • 11 • 2026</div>
+            <button class="btn-fire" onclick="enterParty()">🔥 ACENDER A BRASA</button>
+            <div class="welcome-hint">Toque para abrir o convite</div>
+        </div>
+    </div>
+
+    <!-- Container do Convite -->
+    <div class="invitation-container" id="main-content">
+        
+        <!-- Barra superior apenas com o botão de voltar -->
+        <div class="top-bar">
+            <button class="back-pill" onclick="goBackToWelcome()" title="Voltar ao início">
+                ← Voltar
+            </button>
+        </div>
+
+        <!-- Cartão Principal -->
+        <div class="main-card">
+            <span class="badge-tag">Você é o nosso convidado</span>
+            <h2><span>Vitor</span> & <span>Vitória</span></h2>
+
+            <!-- Data e Hora -->
+            <div class="info-box">
+                <span class="date-highlight">📅 Quinta-feira, 19 de Novembro de 2026</span>
+                <span class="time-highlight">⏰ A partir das 19:30</span>
+            </div>
+
+            <!-- Contagem Regressiva -->
+            <div class="countdown-grid">
+                <div class="countdown-item"><span id="days">00</span><label>Dias</label></div>
+                <div class="countdown-item"><span id="hours">00</span><label>Horas</label></div>
+                <div class="countdown-item"><span id="minutes">00</span><label>Min</label></div>
+                <div class="countdown-item"><span id="seconds">00</span><label>Seg</label></div>
+            </div>
+
+            <!-- Blocos de Trazer -->
+            <div class="bring-grid">
+                <div class="bring-item">
+                    <span class="bring-icon">🥩</span>
+                    <p>Trazer um Kit Churrasco</p>
+                </div>
+                <div class="bring-item">
+                    <span class="bring-icon">🍻</span>
+                    <p>Trazer a bebida da sua preferência</p>
+                </div>
+            </div>
+
+            <!-- Localização -->
+            <div class="location-section">
+                <h4>📍 Local do Evento</h4>
+                <p>Estrada Recanto Cruzeiro do Sul, Chácara 14</p>
+                <a href="https://www.google.com/maps/place/Ch%C3%A1cara+do+coco/@-21.1175333,-47.7521894,17z/data=!3m1!4b1!4m6!3m5!1s0x94b9c1004c3a4947:0x2845520c5a4fb42e!8m2!3d-21.1175383!4d-47.7496145!16s%2Fg%2F11x7wrywh6?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-maps">🗺️ Abrir no Google Maps</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
